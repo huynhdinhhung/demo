@@ -1,10 +1,58 @@
 <!DOCTYPE html>
+
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Trang chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+```
+    .container {
+        text-align: center;
+        margin-top: 100px;
+        background: white;
+        padding: 40px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #555;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #007bff;
+    }
+</style>
+```
+
 </head>
 <body>
-    <h1 th:text="${message}">Tin nhắn mặc định</h1>
+    <div class="container">
+        <h1 th:text="${message}">Chào mừng đến trang chủ</h1>
+
+```
+    <p>Họ tên: <span class="highlight">Huỳnh Đình Hưng</span></p>
+    <p>MSSV: <span class="highlight">2280601292</span></p>
+    <p>Nhóm: <span class="highlight">6</span></p>
+</div>
+```
+
 </body>
 </html>
